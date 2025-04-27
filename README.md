@@ -11,3 +11,5 @@ stop
 ```
 docker-compose stop
 ```
+
+jdbc:postgresql://localhost:5432/retail
