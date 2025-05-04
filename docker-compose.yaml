@@ -2,7 +2,7 @@ version: '3.8'
 services:
   postgres:
     image: postgres:latest
-    container_name: my-postgres
+    container_name: user-database
     environment:
       POSTGRES_USER: toteall
       POSTGRES_PASSWORD: mypassword
