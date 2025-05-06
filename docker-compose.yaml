@@ -1,28 +1,16 @@
 version: '3.8'
 services:
-  users:
+  retail:
     image: postgres:latest
-    container_name: user-database
+    container_name: retail-database
     environment:
       POSTGRES_USER: toteall
-      POSTGRES_PASSWORD: mypassword
+      POSTGRES_PASSWORD: toteall
       POSTGRES_DB: retail
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-  products:
-    image: postgres:latest
-    container_name: order-database
-    environment:
-      POSTGRES_USER: products
-      POSTGRES_PASSWORD: products
-      POSTGRES_DB: products
-    ports:
-      - "5433:5432"
-    volumes:
-      - postgres_order_data:/var/lib/postgresql/data
 
 volumes:
   postgres_data:
-  postgres_order_data:

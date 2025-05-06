@@ -1,3 +1,5 @@
+DROP SCHEMA app;
+
 -- 1. Create a new schema called 'app'
 CREATE SCHEMA IF NOT EXISTS app;
 
