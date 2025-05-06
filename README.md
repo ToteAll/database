@@ -23,5 +23,5 @@ kubectl exec -it postgres-deployment-bc4c4fb57-p5dlt  -- psql -U toteall -d post
 psql -U postgres -d postgres -c "CREATE DATABASE retail OWNER toteall;"
 exit 
 kubectl exec -it postgres-deployment-bc4c4fb57-p5dlt  -- psql -U toteall -d retail
-execute db.sql
+execute user-db.sql
 ```
