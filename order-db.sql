@@ -1,10 +1,10 @@
-DROP SCHEMA order;
+DROP SCHEMA orders;
 
-CREATE SCHEMA IF NOT EXISTS order;
+CREATE SCHEMA IF NOT EXISTS orders;
 
-DROP TABLE IF EXISTS order.orders;
+DROP TABLE IF EXISTS orders.orders;
 
-CREATE TABLE order.orders (
+CREATE TABLE orders.orders (
                         id SERIAL PRIMARY KEY,
                         receiver_name VARCHAR(100) NOT NULL,
                         receiver_contact VARCHAR(20) NOT NULL,
